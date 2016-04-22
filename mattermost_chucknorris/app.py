@@ -27,7 +27,7 @@ def root():
 
     return "OK"
 
-@app.route('/random')
+@app.route('/random', methods=['POST'])
 def random():
     """
     Get a random Chuck Norris fact
