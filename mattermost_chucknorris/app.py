@@ -43,7 +43,7 @@ def random():
         if not 'token' in data:
             raise Exception('Missing necessary token in the post data')
 
-        if MATTERMOST_CHUCK_NORRIS_TOKEN.find(data['token']) == -1:
+        if MATTERMOST_TOKEN.find(data['token']) == -1:
             raise Exception('Tokens did not match, it is possible that this request came from somewhere other than Mattermost')
 
         # NOTE: support the slash command
@@ -78,7 +78,7 @@ def new_fact():
         if not 'token' in data:
             raise Exception('Missing necessary token in the post data')
 
-        if MATTERMOST_CHUCK_NORRIS_TOKEN.find(data['token']) == -1:
+        if MATTERMOST_TOKEN.find(data['token']) == -1:
             raise Exception('Tokens did not match, it is possible that this request came from somewhere other than Mattermost')
 
         # NOTE: support the slash command

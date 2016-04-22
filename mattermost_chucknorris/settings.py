@@ -11,7 +11,7 @@ ICON_URL = os.environ.get('ICON_URL', 'http://rocketdock.com/images/screenshots/
 SCHEME = os.environ.get('SCHEME', 'http')
 
 # the Mattemost token generated when you created your outgoing webhook
-MATTERMOST_CHUCK_NORRIS_TOKEN = os.environ.get('MATTERMOST_CHUCK_NORRIS_TOKEN', None)
+MATTERMOST_TOKEN = os.environ.get('MATTERMOST_TOKEN', None)
 
 # Start application in debug mode e.g. to restart on file changes.
 DEBUG = os.environ.get('DEBUG', False)
